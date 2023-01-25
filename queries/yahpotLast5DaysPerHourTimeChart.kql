@@ -1,0 +1,5 @@
+Syslog
+| where ProcessName == "/yahpot.py" or SyslogMessage has "yahpot"
+| where TimeGenerated  >= ago(5d)
+| summarize event_count=count() by bin(EventTime, 1h)
+| render timechart 

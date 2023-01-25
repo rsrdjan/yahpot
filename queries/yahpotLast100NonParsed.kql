@@ -1,0 +1,3 @@
+Syslog
+| where ProcessName == "/yahpot.py" or ProcessName  has "yahpot"
+| top 100 by TimeGenerated desc

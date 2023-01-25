@@ -1,0 +1,5 @@
+Syslog
+| where ProcessName == "/yahpot.py" or SyslogMessage  has "yahpot"
+| parse kind=relaxed SyslogMessage with * "yahpot " ip " -- " timegen '"' url '"' response "-"
+| project timegen, ip, url, response
+| top 100 by timegen
