@@ -16,7 +16,7 @@ Https server on port 443 with apache2 welcome page, logging to `/var/log/syslog`
 `yahpot.py -t https -d apache2/localhost/index.html -l syslog -k key.pem -c cert.pem`
 
 ### Queries
-In `templates` directory there are few KQL (Kusto Query Language) queries I'm using for analyzing Yahpot logs in Microsoft Sentinel.
+In `queries` directory there are few KQL (Kusto Query Language) queries I'm using for analyzing Yahpot logs in Microsoft Sentinel.
 
 ### Tools
 Directory `tools` contains useful scripts for parsing Yahpot log files and more.
