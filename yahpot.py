@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+# yahpot.py - Yet Another HTTP(S) HoneyPot
+# by Srdjan Rajcevic https://github.com/rsrdjan
+
 import argparse, syslog, sys, ssl
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
