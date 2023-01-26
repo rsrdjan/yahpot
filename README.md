@@ -23,6 +23,7 @@ Directory `tools` contains useful scripts for parsing Yahpot log files and more.
 #### yah2otx
 Parsing Yahpot logs and sending malicious IP IOC to OTX. Local `sqlite3` database is created to keep track of parsed ip addresses. 
 If `pulse` doesn't exist, it will be created.
+**Be aware** that in order to use `yah2otx` you need to set environment variable `OTX_API_KEY` for Open Threat eXchange access.
 
 ##### Usage
 `yah2otx.py [-h] -l {syslog,ylog} logfile pulse`
