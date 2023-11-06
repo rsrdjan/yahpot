@@ -1,0 +1,5 @@
+Syslog
+| where SyslogMessage contains "Connection closed by invalid user"
+| project SyslogMessage
+| extend split(SyslogMessage, " ", 6)
+| distinct tostring(SyslogMessage)
